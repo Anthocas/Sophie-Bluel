@@ -1,0 +1,453 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** end reset css**/
+body {
+	max-width: 1140px;
+	margin:auto;
+	font-family: 'Work Sans' ;
+	font-size: 14px;
+	padding-top: 2em;
+}
+
+main a {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	/* text-align: center; */
+}
+
+
+.stickybar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 59px;
+	gap: 21px;
+}
+
+.stickybar a {
+	color: white;
+}
+
+.stickybar button {
+	border-radius: 60px;
+	padding: 0px 23px;
+    height: 38px;
+	cursor: pointer;
+}
+
+button {
+	height: 59px;
+}
+
+.modal {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0, 0, 0, 0.8);
+}
+
+.modalWindow {
+	width: 630px;
+	max-width: calc(100vw - 20px);
+	max-height: calc(100vh - 20px);
+	padding: 20px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.modalContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 85px;
+}
+
+.topmodal {
+	text-align: center;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+
+}
+
+.closemodalbutton {
+	height: 24px;
+	border: none;
+    background: transparent;
+}
+
+.container1 {
+	border-bottom: 1px solid #B3B3B3;
+    overflow-wrap: anywhere;
+    padding: 47px 0px;
+	width: 100%;
+	
+}
+
+.container2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0
+}
+section {
+	margin: 50px 0
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+;
+}
+
+h2{
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+
+h3 {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 30px;
+	text-align: center;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+}
+
+nav a {
+	text-decoration-line: none;
+	text-decoration-color: black;
+	color: black;
+}
+
+nav a:hover {
+	color: #B1663C;
+}
+
+li:hover {
+	color: #B1663C;
+}
+#introduction {
+	display: flex;
+	align-items: center;
+}
+#introduction figure {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	
+}
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#introduction a {
+	margin: 20px 58px;
+}
+
+#introduction article {
+	flex: 1
+}
+#introduction h2 {
+	margin-bottom: 1em;
+}
+
+#introduction p {
+	margin-bottom: 0.5em;
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+}
+#portfolio h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.h2-box {
+	display: flex;
+    justify-content: center;
+	align-items: baseline;
+}
+
+.h2-box h2 {
+	margin-right: 25px;
+}
+
+#portfolio button {
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	white-space: nowrap;
+	/* color: white; */
+
+	background-color: transparent;
+	margin : 2em auto ;
+	width: 180px;
+	border: 1px solid #1D6154;
+	border-radius: 60px ;
+	height: 50px;
+    font-size: 1.2em;
+	/* width: 100%; */
+    min-width: fit-content;
+
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+
+}
+
+#portfolio button:focus {
+    background-color:#1D6154;
+	color: white;
+}
+
+.box-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+}
+
+.gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.gallery img {
+	width: 100%;
+
+}
+#contact {
+	width: 50%;
+margin: auto;
+}
+#contact > * {
+	text-align: center;
+
+}
+#contact h2{
+	margin-bottom: 20px;
+}
+ form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+
+ input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+ label {
+	margin: 2em 0 1em 0;
+}
+ textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+select {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+
+	appearance: none;
+	background-image: url("https://site-assets.fontawesome.com/releases/v6.3.0/svgs/solid/chevron-down.svg");
+	background-repeat: no-repeat;
+	background-position: right 1.5rem top 50%;
+	background-size: 0.65rem auto;
+}
+
+#upload {
+	color: transparent;
+}
+
+#upload::-webkit-file-upload-button {
+	visibility: hidden;
+}
+
+#upload::before {
+	content: 'Select some files';
+  	color: black;
+  	display: inline-block;
+  	background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  	border: 1px solid #999;
+  	border-radius: 3px;
+  	padding: 5px 8px;
+  	outline: none;
+  	white-space: nowrap;
+  	cursor: pointer;
+  	text-shadow: 1px 1px #fff;
+  	font-weight: 700;
+  	font-size: 10pt;
+}
+
+#upload::after {
+	background-color: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#upload:active {
+	outline: 0;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 150px;
+	width: 50%;
+}
+
+.login h2 {
+	margin-bottom: 37px;
+}
+
+.login form {
+	text-align: left;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+}
+
+.login a {
+	color: #3D3D3D;
+	margin-bottom: 355px;
+}
+
+input[type="submit"]{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
+	cursor: pointer;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em;
+	cursor: pointer;
+	
+}
