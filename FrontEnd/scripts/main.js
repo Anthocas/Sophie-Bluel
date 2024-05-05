@@ -19,15 +19,15 @@ function checkLogin(donneesProjets) {
         });
 
         //Creation du button
-        let buttonn = document.createElement("button");
-        buttonn.innerHTML = "publier les changements";
+        //let buttonn = document.createElement("button");
+        //buttonn.innerHTML = "publier les changements";
         //Placer en element "Child" a la cible
-        cibleBar.appendChild(buttonn);
+        //cibleBar.appendChild(buttonn);
         //Evenement au Click du button
-        buttonn.addEventListener ("click", function() {
+        //buttonn.addEventListener ("click", function() {
             // alert("alert");
-            console.log("button click");
-        });
+            //console.log("button click");
+        //});
 
         let login = document.getElementById("login");
         login.innerHTML = "logout";

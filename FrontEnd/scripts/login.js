@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
         const email = document.querySelector('#email').value;
         const password = document.querySelector('#mdp').value;
-  
+        console.log(email)
+        console.log(password)
         // Appel de l'API externe pour se connecter
         fetch('http://localhost:5678/api/users/login', {
 
@@ -16,7 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
             headers: {
             'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ email, password })
+            body: JSON.stringify({
+                "email": email,
+                "password": password
+              })
         })
         .then(response => response.json())
         .then(data => {
